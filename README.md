@@ -107,60 +107,19 @@ Built an interactive dashboard featuring:
 
 ---
 
-## ▶️ How to Run
-
-### Prerequisites
-```
-Python 3.8+
-PostgreSQL
-Power BI Desktop
-Required Python libraries: pandas, sqlalchemy, psycopg2
-```
-
-### Steps
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/your-username/customer-shopping-behavior.git
-cd customer-shopping-behavior
-```
-
-**2. Install dependencies**
-```bash
-pip install pandas sqlalchemy psycopg2
-```
-
-**3. Run the Python script**
-```bash
-python eda_and_cleaning.py
-```
-This will clean the dataset and load it into your PostgreSQL database.
-
-**4. Run SQL queries**
-
-Open your PostgreSQL client (e.g., pgAdmin or DBeaver) and execute the scripts in the `/sql` folder sequentially.
-
-**5. Open the dashboard**
-
-Launch `Customer_Behavior_Dashboard.pbix` in **Power BI Desktop** and refresh the data source connection.
-
----
-
 ## 📁 Project Structure
 
 ```
 customer-shopping-behavior/
 │
 ├── data/
-│   └── shopping_behavior_raw.csv
+│   └── customer_shopping_behavior.csv
 │
 ├── notebooks/
-│   └── eda_and_cleaning.ipynb
+│   └── customer_shopping_behaviour_analysis.ipynb
 │
 ├── sql/
-│   ├── 01_revenue_by_gender.sql
-│   ├── 02_high_spending_discount_users.sql
-│   └── ... (10 query files)
+│   ├── customer_shopping_behaviour_queries
 │
 ├── dashboard/
 │   └── Customer_Behavior_Dashboard.pbix
@@ -169,5 +128,3 @@ customer-shopping-behavior/
 │   └── Customer_Shopping_Behavior_Analysis.pdf
 │
 └── README.md
-```
-[LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/your-username) • [Email](mailto:your@email.com)
